@@ -52,7 +52,7 @@ int main() {
 		     TEST_TRUE("true: 10,000 words", origa == origb);
 		   });
 
-  rubric.criterion("partition(...)", 1,
+  rubric.criterion("partition(...)", 2,
 		   [&]() {
              string_vector orig1a = test1;
 			 int p = hoare_partition(orig1a, 0, 0);

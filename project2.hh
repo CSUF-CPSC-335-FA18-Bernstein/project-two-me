@@ -30,7 +30,8 @@ void randomize_list(string_vector & strings);
 // first and last indexes for sorting range
 void mergesort(string_vector & strings);
 
-
+// Partition a portion of a list (from start to end)
+// using the Hoare Partition algorithm 
 int hoare_partition(string_vector & strings, int start, int end);
 
 // Sort the given list using the quicksort algorithm.

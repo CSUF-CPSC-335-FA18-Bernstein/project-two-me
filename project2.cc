@@ -157,7 +157,7 @@ int hoare_partition(string_vector & strings, int start, int end)
 void quicksort(string_vector & strings, int start, int end)
 {
   int pivotIndex;
-  if (start > end)
+  if (start < end)
   {
     pivotIndex = hoare_partition(strings, start, end);
 

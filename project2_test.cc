@@ -18,15 +18,17 @@ using namespace std;
 
 int main() {
 
+
   string_vector test0 = {  };
-  
+
   string_vector test1 = { "titans" };
-  
+
   string_vector test8 = {
     "horse", "mouse", "dog", "rat", "cat", "cow", "pig", "donkey" };
-  
+
   string_vector words_txt;
   bool load_words_ok = load_words(words_txt, "words.txt");
+
 
   Rubric rubric;
 
@@ -50,7 +52,7 @@ int main() {
              string_vector origb = n_words;
 			 sort(origb.begin(), origb.end());
 		     TEST_TRUE("true: 10,000 words", origa == origb);
-		   });
+		    });
 
   rubric.criterion("partition(...)", 2,
 		   [&]() {
@@ -69,6 +71,7 @@ int main() {
              string_vector orig1a = test1;
              string_vector orig1b = test1;
 			 quicksort(orig1a);
+
 			 sort(orig1b.begin(), orig1b.end());
 		     TEST_TRUE("true: 1 word", orig1a == orig1b);
 
